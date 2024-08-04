@@ -1,0 +1,220 @@
+/* 인포윈도우 스타일 */
+.infowindow {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  box-sizing: border-box;
+}
+
+.infowindow strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #3e3e3e;
+}
+
+.infowindow .address {
+  font-size: 14px;
+  color: #8b8b8b;
+  margin-bottom: 5px;
+}
+
+.infowindow .phone {
+  font-size: 14px;
+  color: #3e3e3e;
+}
+
+/* 검색 바 스타일 */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-button,
+.location-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #ffeb00;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-button {
+  border-radius: 0 5px 5px 0;
+}
+
+.location-button {
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.search-button:hover,
+.location-button:hover {
+  background-color: #ffe000;
+}
+
+/* 지도 스타일 */
+.map {
+  width: 100%;
+  height: 500px;
+  margin-top: 10px;
+}
+
+/* 검색된 맛집 리스트와 리뷰 창 스타일 */
+.list-review-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+  height: 500px; /* 상대적인 높이 설정 */
+  box-sizing: border-box;
+}
+
+.places-list-container {
+  flex: 1;
+  margin-right: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.places-list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.places-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative; /* 버튼의 절대 위치를 설정하기 위해 필요 */
+}
+
+.places-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.places-list button.favorite-button {
+  position: absolute; /* 버튼을 절대 위치로 설정 */
+  right: 10px; /* 오른쪽으로 정렬 */
+  background-color: #ffeb00; /* 기본 색상 설정 */
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.places-list button.favorite-button:hover {
+  background-color: #ffe000;
+}
+
+.review-container {
+  flex: 2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.review-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.review-form input,
+.review-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.review-form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #ffeb00;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.review-form button:hover {
+  background-color: #ffe000;
+}
+
+/* 즐겨찾기 스타일 */
+.favorites-container {
+  margin-top: 20px;
+}
+
+.favorites-list {
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.place-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative; /* 버튼의 절대 위치를 설정하기 위해 필요 */
+}
+
+.place-item:last-child {
+  border-bottom: none;
+}
+
+.place-item button.favorite-button {
+  position: absolute; /* 버튼을 절대 위치로 설정 */
+  right: 10px; /* 오른쪽으로 정렬 */
+  background-color: #ffeb00; /* 기본 색상 설정 */
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.place-item button.favorite-button:hover {
+  background-color: #ffe000;
+}
